@@ -1,0 +1,17 @@
+*.exe
+*.o
+
+# Build outputs/logs
+build.err
+build.log
+build.out
+
+# Dev-C++ / MinGW temporary files
+*.tds
+*.layout
+*.dev
+
+# OS / editor noise
+.vscode/
+Thumbs.db
+Desktop.ini

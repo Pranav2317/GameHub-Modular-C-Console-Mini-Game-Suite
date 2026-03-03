@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cctype>
+#include <string>
 #include <windows.h>
 using namespace std;
 
@@ -33,9 +35,9 @@ void playColoredSquares() {
         cout << "Guess the color (Red, Green, Blue, Yellow, Purple): ";
         cin >> guess;
 
-      for (int i = 0; i < guess.length(); ++i) {
-    guess[i] = tolower(guess[i]);
-}
+                for (size_t i = 0; i < guess.length(); ++i) {
+                        guess[i] = static_cast<char>(tolower(static_cast<unsigned char>(guess[i])));
+                }
 
 
         Color userColor;
